@@ -10,7 +10,7 @@ pipeline {
         stage("Run") {
             steps {
                 echo "Run docker Image"
-                bat "docker run -d -p 5000:5000 name mycontainer mypythonapp"
+                bat "docker run -d -p 5000:5000 --name mycontainer mypythonapp"
             }
         }
     }
